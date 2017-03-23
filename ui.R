@@ -1,17 +1,8 @@
-#
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(shinyswipr)
+library(shinythemes)
 
-# Define UI for application that draws a histogram
-navbarPage(
+navbarPage(theme = shinytheme("readable"),
   title = "contributr 🌻",
   tabPanel(
     "Profile",
