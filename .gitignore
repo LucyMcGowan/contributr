@@ -5,5 +5,5 @@
 *.Rhistory
 *.Rprofile
 *.Rapp.history
-*papr-drop.rds
+*contributr-drop.rds
 *rsconnect
