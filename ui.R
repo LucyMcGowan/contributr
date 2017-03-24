@@ -2,7 +2,11 @@ library(shiny)
 library(shinyswipr)
 library(shinythemes)
 
-navbarPage(theme = shinytheme("readable"),
+shinyUI(fluidPage(
+  tags$style(type="text/css", "p { font-size: 15px; }"),
+  tags$style(type="text/css", "li { font-size: 15px; }"),
+  navbarPage(
+  theme = shinytheme("readable"),
   title = "contributr 🌻",
   tabPanel(
     "Profile",
@@ -82,4 +86,5 @@ navbarPage(theme = shinytheme("readable"),
            includeMarkdown("./starting_guide.md")),
   tabPanel("About",
            includeMarkdown("./about.md")))
+))
   
