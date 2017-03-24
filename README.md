@@ -28,4 +28,4 @@ You will need google credentials for the login button to work. Create a [Google 
 options("googleAuthR.webapp.client_id" = "MY_CLIENT_ID")
 options("googleAuthR.webapp.client_secret" = "MY_CLIENT_SECRET")
 ```
-Again, *mak sure to put `.Rprofile` in your `.gitignore`.*
+Again, *make sure to put `.Rprofile` in your `.gitignore`.*
