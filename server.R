@@ -45,6 +45,7 @@ shinyServer(function(input, output) {
     login = FALSE,
     person_id = 12345,
     issue = issue,
+    old_issues = NA,
     user_dat = data_frame(
       id = numeric(),
       title = character(),
@@ -79,8 +80,11 @@ shinyServer(function(input, output) {
       with_shiny(get_user_info, shiny_access_token = accessToken())  #grab the user info
    rv$person_id <-
       digest::digest(details$id) #assign the user id to our reactive variable
-    if(isolate(rv$person_id) != 12345 & drop_exists(paste0("shiny/2016/papr/user_dat/user_dat_",isolate(rv$person_id),".csv"), dtoken = token)){
-    }
+    if(rv$person_id != 12345 & drop_exists(paste0("shiny/2016/contributr/user_dat/user_dat_",rv$person_id,".csv"), dtoken = token)){
+      old <- drop_read_csv(paste0("shiny/2016/contributr/user_dat/user_dat_",rv$person_id,".csv"), dtoken = token)
+      rv$old_issues = old$id
+      print("aha!")
+      }
     details #return user information
   })
   
@@ -124,7 +128,7 @@ shinyServer(function(input, output) {
       rv$user_dat
     )
     if(sum(!(df$id %in% rv$user_dat$id)) > 1){
-    ind <- sample(df$id[-which(df$id %in% rv$user_dat$id)],1)
+    ind <- sample(df$id[-which(df$id %in% c(rv$user_dat$id, rv$old_issues))],1)
     rv$issue <- df[df$id == ind,]
     print(sum(!(df$id %in% rv$user_dat$id)) > 1)
     #output issues to cards
@@ -141,7 +145,7 @@ shinyServer(function(input, output) {
     
     file_path2 <-
       file.path(tempdir(), paste0("user_dat_",isolate(rv$person_id), ".csv"))
-    write_csv(data.frame(name = isolate(input$name), twitter = isolate(input$twitter)), file_path2)
+    write_csv(data.frame(rv$user_dat, name = isolate(input$name), twitter = isolate(input$twitter)), file_path2)
     drop_upload(file_path2,"shiny/2017/contributr/user_dat/", dtoken = token)
     
     #output$resultsTable <- renderTable({rv$user_dat})
