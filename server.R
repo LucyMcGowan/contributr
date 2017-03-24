@@ -28,7 +28,7 @@ df <- map_df(repos, my_get)
 
 
 shinyServer(function(input, output) {
-  token <- readRDS("./papr-drop.rds")
+  token <- readRDS("./contributr-drop.rds")
   session_id <- as.numeric(Sys.time())
   
   #set initial issue
