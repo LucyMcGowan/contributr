@@ -1,5 +1,9 @@
 ## Welcome to `contributr` a Shiny app for swiping through beginner GitHub issues!
 
+## User guide
+
+The app is hosted at [lucy.shinyapps.io/contributr](https://lucy.shinyapps.io/contributr)
+
 ## Starting guide to run locally
 
 ### Packages
