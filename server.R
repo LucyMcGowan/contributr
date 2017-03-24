@@ -38,7 +38,7 @@ shinyServer(function(input, output) {
     HTML(markdown::markdownToHTML(text = issue$body))
   })
   output$link <- renderUI({
-    HTML(markdown::markdownToHTML(text = issue$html_url))
+    HTML(markdown::markdownToHTML(text = paste0("<a href = '", issue$html_url, "' target='_blank'> start working on this issue now! </a>")))
   })
   
   rv <- reactiveValues(
@@ -133,7 +133,7 @@ shinyServer(function(input, output) {
       HTML(markdown::markdownToHTML(text = rv$issue$body))
            })
     output$link <- renderUI({
-      HTML(markdown::markdownToHTML(text = rv$issue$html_url))
+      HTML(markdown::markdownToHTML(text = paste0("<a href = '", rv$issue$html_url, "' target='_blank'> start working on this issue now! </a>")))
     })
     
     write_csv(isolate(rv$user_dat), file_path) #write the csv

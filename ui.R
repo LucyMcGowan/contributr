@@ -74,7 +74,6 @@ navbarPage(theme = shinytheme("readable"),
                  hr(),
                  uiOutput("body"),
                  hr(),
-                 h4("start working on this issue now!"),
                  uiOutput("link")
                )
              ))
