@@ -2,7 +2,7 @@
 
 ## User guide
 
-The app is hosted at [lucy.shinyapps.io/contributr](https://lucy.shinyapps.io/contributr)
+The app is hosted at [ropensci.shinyapps.io/contributr](https://ropensci.shinyapps.io/contributr/)
 
 ## Starting guide to run locally
 
