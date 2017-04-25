@@ -10,7 +10,7 @@ library(readr)
 
 
           
-repos <- c("scrubr","taxize","rdpla","lawn","rnoaa","nneo")
+repos <- c("scrubr","taxize","rdpla","lawn","rnoaa","nneo","randgeo", "fulltext", "bold", "brranching", "finch", "jqr", "rplos", "reuropeana", "sofa", "solrium", "natserv", "rdatacite")
 my_get <- function(repo) {
   tryCatch({
   gh("/repos/:owner/:repo/:filter",
