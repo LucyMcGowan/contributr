@@ -35,7 +35,6 @@ The app is hosted at [ropensci.shinyapps.io/contributr](https://ropensci.shinyap
 ## Guidelines for writing beginner issues
 
 * Create a Beginner label whose color should be #6ABF49  
-* Time needed for solving the issue is probably too subjective?  
 * If the issue is urgent, or you would do it yourself if no one does it for a few months, write it down.  
 * Please write as much context as possible for a newcomer to understand what you mean.  
 * If you have any other preferred channel of communication about the package than the issue thread itself (e.g. a Slack team), please write it down.  
