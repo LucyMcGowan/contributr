@@ -2,7 +2,7 @@ Welcome to `contributr` a Shiny app for swiping through beginner GitHub issues!
 ================
 
 -   [User guide](#user-guide)
--   [Guidelines for Maintainters](#guidelines-for-maintainters)
+-   [Guidelines for maintainters](#guidelines-for-maintainters)
 -   [Guidelines for writing beginner issues](#guidelines-for-writing-beginner-issues)
 -   [Starting guide to run locally](#starting-guide-to-run-locally)
 
@@ -12,7 +12,17 @@ User guide
 
 The app is hosted at [ropensci.shinyapps.io/contributr](https://ropensci.shinyapps.io/contributr/)
 
-Guidelines for Maintainters
+If anything is unclear or you notice issues please post [here](https://github.com/LucyMcGowan/contributr/issues/new).
+
+*Some guidelines for new users:*
+
+-   Don't start working on an issue before being assigned to it. Express your interest in the issue thread.
+-   Be reliable, if you get assigned to an issue do it in a timely manner and respond to comments timely too.
+-   It might be helpful to write your due dates so that the maintainer knows when to hear back from you.
+-   Don't break the package, continuous integration builds should not fail for your Pull request.
+-   Have fun!
+
+Guidelines for maintainters
 ---------------------------
 
 -   Please respect the guidelines for writing issues.
@@ -43,12 +53,12 @@ Starting guide to run locally
 
 To run this locally, you will need the following packages that are not currently on CRAN:
 
--   <https://github.com/nstrayer/shinyswipr>
+-   <https://github.com/nstrayer/shinysense>
 -   <https://github.com/MarkEdmondson1234/googleID>
 
 <!-- -->
 
-    devtools::install_github("nstrayer/shinyswipr")
+    devtools::install_github("nstrayer/shinysense")
     devtools::install_github("MarkEdmondson1234/googleID")
 
 ### Dropbox Token

@@ -1,5 +1,5 @@
 library(shiny)
-library(shinyswipr)
+library(shinysense)
 library(googleAuthR)
 library(googleID)
 library(gh)
