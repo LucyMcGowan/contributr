@@ -25,6 +25,8 @@ If anything is unclear or you notice issues please post [here](https://github.co
 Guidelines for maintainters
 ---------------------------
 
+**If you are interested in becoming a maintainer with beginner issues, please fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSe7xckeQ8khdmlxYSWXEqogF654y9LkBZpbPtNEHOssiqjt2g/viewform?usp=sf_link).**
+
 -   Please respect the guidelines for writing issues.
 -   Be nice and patient.
 -   When a volunteer say they are interested, assign them to the issue.
