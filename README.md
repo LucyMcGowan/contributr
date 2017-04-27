@@ -7,6 +7,8 @@ Welcome to `contributr` a Shiny app for swiping through beginner GitHub issues!
 -   [Starting guide to run locally](#starting-guide-to-run-locally)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+`contributr` is a Shiny app for finding beginner GitHub issues to contribute to. In this README we'll give guidelines for participants in the program, and for potential contributors to the app. Participants are beginners wanting to contribute to repositories, and maintainers of repositories wishing to open issues for and guide beginners.
+
 User guide
 ----------
 
